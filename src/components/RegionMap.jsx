@@ -19,7 +19,7 @@ export default function RegionMap() {
         <>
             <HeaderLine source={source}>Карта Германии</HeaderLine>
             <List items={items}>
-                {items => items.map((item, index) => <ListItem key={index}>{item}</ListItem>)}
+                {items => items.map((item, index) => <ListItem key={index} {...item} />)}
             </List>          
         </>
     )

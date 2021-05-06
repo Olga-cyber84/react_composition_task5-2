@@ -36,7 +36,7 @@ export default function Ether(props) {
         <>
             <HeaderLine source={source}>Эфир</HeaderLine>
             <List items={items}>
-                {items => items.map((item, index) => <ListItem key={index}>{item}</ListItem>)}
+                {items => items.map((item, index) => <ListItem key={index} {...item} />)}
             </List>
         </>
     )

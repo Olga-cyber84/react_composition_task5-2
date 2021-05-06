@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import HeaderBlock from './HeaderBlock';
 import logo from '.././logo.svg';
+import icon from '../img/icon.png';
 import RightBlock from './RightBlock';
 import MainNews from './MainNews';
 import Services from './Services';
@@ -16,7 +17,7 @@ export default function FrontPage() {
     //компонент главной страницы, содержит компоненты, отвечающие за отображение ее структурных блоков, хранит состояние
     const nowNews = [
         {
-            icon: "https://sun9-15.userapi.com/impg/mieShYW_QbFY7KLwMORSWWWfamqHVgtOa_s1cQ/PXRuFDdsle4.jpg?size=500x500&quality=96&sign=89cc9228975598d57934710a4c0a0bf0&type=album",
+            icon: icon,
             title: "Новость 1",
             href: "/#"
         },
@@ -26,24 +27,24 @@ export default function FrontPage() {
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon,
             title: "Новость 3",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon,
             title: "Новость 4",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon,
             title: "Новость 5",
             href: "/#"
         }
     ];
     const inPlace = [
         {
-            icon: "https://sun9-15.userapi.com/impg/mieShYW_QbFY7KLwMORSWWWfamqHVgtOa_s1cQ/PXRuFDdsle4.jpg?size=500x500&quality=96&sign=89cc9228975598d57934710a4c0a0bf0&type=album",
+            icon: icon,
             title: "Новость 1 из региона",
             href: "/#"
         },
@@ -53,24 +54,24 @@ export default function FrontPage() {
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: logo,
             title: "Новость 3 из региона",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: logo,
             title: "Новость 4 из региона",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon.png,
             title: "Новость 5 из региона",
             href: "/#"
         }
     ];
     const recommends = [
         {
-            icon: "https://sun9-15.userapi.com/impg/mieShYW_QbFY7KLwMORSWWWfamqHVgtOa_s1cQ/PXRuFDdsle4.jpg?size=500x500&quality=96&sign=89cc9228975598d57934710a4c0a0bf0&type=album",
+            icon: logo,
             title: "Новость 1 рекомендованная",
             href: "/#"
         },
@@ -80,17 +81,17 @@ export default function FrontPage() {
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: logo,
             title: "Новость 3 рекомендованная",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon,
             title: "Новость 4 рекомендованная",
             href: "/#"
         },
         {
-            icon: './img/icon.png',
+            icon: icon,
             title: "Новость 5 рекомендованная",
             href: "/#"
         }
@@ -151,17 +152,17 @@ export default function FrontPage() {
     
   return (
     <>
-      <HeaderBlock onSelectSource={handleSelectSource} />
-      <MainNews chosenNews={chosenNews}/>
-      <RightBlock rightBlockData={rightBlockData}/>
-      <Services services={services} />
-      <Search />
-      <Banner banner={banner}/>
-      <Weather weather={weather}/>
-      <Visiting />
-      <RegionMap />
-      <TvProgramm />
-      <Ether />
+        <HeaderBlock onSelectSource={handleSelectSource} />
+        <MainNews chosenNews={chosenNews}/>
+        <RightBlock rightBlockData={rightBlockData}/>
+        <Services services={services} />
+        <Search />
+        <Banner banner={banner}/>
+        <Weather weather={weather}/>
+        <Visiting />
+        <RegionMap />
+        <TvProgramm />
+        <Ether />
     </>
   );
 }

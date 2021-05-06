@@ -38,7 +38,7 @@ export default function TvProgramm() {
         <>
             <HeaderLine source={source}>Телепрограмма</HeaderLine>
             <List items={items}>
-                {items => items.map((item, index) => <ListItemTV key={index}>{item}</ListItemTV>)}
+                {items => items.map((item, index) => <ListItemTV key={index} {...item} />)}
             </List>
         </>
     )

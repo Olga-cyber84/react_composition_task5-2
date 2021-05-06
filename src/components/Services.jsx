@@ -8,7 +8,7 @@ export default function Services({services}) {
     return (
         <div className="services">
             <List items={items}>
-                {items => items.map((item, index) => <ListItem key={index}>{item}</ListItem>)}
+                {items => items.map((item, index) => <ListItem key={index} {...item} />)}
             </List>
         </div>
     )

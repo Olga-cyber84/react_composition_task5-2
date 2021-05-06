@@ -32,7 +32,7 @@ export default function Visiting() {
         <>
             <HeaderLine source={source}>Посещаемое</HeaderLine>
             <List items={items}>
-                {items => items.map((item, index) => <ListItem key={index}>{item}</ListItem>)}
+                {items => items.map((item, index) => <ListItem key={index} {...item}/>)}
             </List>            
         </>
     )

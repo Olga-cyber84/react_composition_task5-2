@@ -7,7 +7,7 @@ export default function RightBlock({rightBlockData}) {
     const items = rightBlockData;
     return (
         <List items={items}>
-            {items => items.map((item, index) => <ListItem key={index}>{item}</ListItem>)}
+            {items => items.map((item, index) => <ListItem key={index} {...item}/>)}
         </List>
     )
 }
